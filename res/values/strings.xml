@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PosMapActivity!</string>
+    <string name="app_name">PosMap</string>
+    <string name="app_label">PosMap</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="gps_message">GPSが無効です。有効にしますか？</string>
+    <string name="finish_appli">アプリ終了</string>
+    <string name="show_log">ログ表示</string>
+    <string name="delete_log">ログ消去</string>
+</resources>

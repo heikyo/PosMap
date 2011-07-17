@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	android:key="preferenceScreen"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+  <PreferenceCategory
+  	android:key="Pref"
+  	android:title="アラート関連">
+  	<CheckBoxPreference
+  		android:key="PREF_VIBE_MODE"
+  		android:title="バイブレーション機能"
+  		android:defaultValue="true"
+  		android:summaryOn="バイブ:ON"
+  		android:summaryOff="バイブ:OFF"
+  		android:summary="バイブのON/OFF"/>
+  	<CheckBoxPreference
+  		android:key="PREF_SOUND_MODE"
+  		android:title="アラーム音機能"
+  		android:defaultValue="true"
+  		android:summaryOn="着信音:ON"
+  		android:summaryOff="着信音:OFF"
+  		android:summary="着信音のON/OFF"
+  		android:disableDependentsState="false"/>
+  	<com.app.posmap.MyDialogPreference
+  		android:key="PREF_SETTING_SOUND"
+  		android:title="音選択"
+  		android:summary="着信音選択"
+  		android:dependency="PREF_SOUND_MODE"/>
+  	<ListPreference
+  		android:key="PREF_CALL_RANGE"
+  		android:title="お知らせ範囲指定"
+  		android:summary="ListPreference"
+  		android:entries="@array/call_range"
+  		android:entryValues="@array/call_range_values"
+  		android:dialogTitle="範囲指定"
+  		android:defaultValue="300" />
+  </PreferenceCategory>
+  <PreferenceCategory
+  	android:key="Prefs2"
+  	android:title="つぶやき関連">
+  	<EditTextPreference
+  		android:key="PREF_NOW_TWEET"
+  		android:title="現在地つぶやき定型文"
+  		android:summary="EditTextPreference"
+  		android:dialogTitle="定型文"
+  		android:defaultValue="現在地"/>
+  	<EditTextPreference
+  		android:key="PREF_WILL_TWEET"
+  		android:title="目的地つぶやき定型文"
+  		android:summary="EditTextPreference"
+  		android:dialogTitle="定型文"
+  		android:defaultValue="目的地"/>
+  </PreferenceCategory>
+</PreferenceScreen>

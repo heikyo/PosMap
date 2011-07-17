@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/app_label"
+    android:searchSuggestAuthority="com.app.posmap.provider"
+    android:searchSuggestSelection=" ?"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+    android:includeInGlobalSearch = "true">
+</searchable>
